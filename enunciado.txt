@@ -1,0 +1,40 @@
+Essa tarefa é para ser feita em grupo conforme a composição dos grupos informada em sala de aula. Deverá ser enviado apenas um arquivo zipado contendo a solução e o nome de todos os membros do grupo assim como a indicação da atividade desenvolvida no grupo por cada um dos seus membros.
+
+A nota será individual e não do grupo.
+
+Bom trabalho.
+
+ML
+
+I) Questão (Nota 6)
+
+Construa macros em NASM que permitam simular a execução dos seguintes comandos em C: do-while, while-do, for, switch e if-else. Para cada uma dessas macros, construa um pequeno programas em C que chame um função em NASM que invoque a macro.
+
+Nota:
+
+1) Documentação das macros (1,0)
+
+2) Corretude de cada macro (0,5), totalizando o máximo de 2,5 pontos
+
+3) Construção de um programa C que chame a macro simulando aninhamento (0,5) , totalizando máximo de 2,5 pontos
+
+II) Questão (6,0)
+
+Pesquise sobre a geração de pseudos-aleatórios com registrador de deslocamento.Na literatura especializada essa abordagem é conhecida como Linear Feedback Shift Register (LFSR). Escolha um polinômio da literatura e o Implemente em um gerador baseado em registrador de deslocamento de 24 bits.
+
+a) Nesse módulo, use programa Assembly NASM
+b) Também implemente esse módulo em C ISO
+
+Gere 16M pseudos-aleatórios (1..16777215). Divida-os em 4096 intervalos e calcule a freqüência dos números em cada um desses intervalos. O primeiro intervalo deve ser (0, 4096), o segundo de [4096, 8192), etc. Para cada intervalo calcule a freqüência observada (fo) e a esperada (fe), isto é aquela considerando que os números são realmente aleatório ou seja, que seguem a distribuição uniforme) A frequência esperada deve ser 4096.
+
+A semente inicial não pode ser zero
+
+O trabalho é em grupo. Use o padrão C ISO. Entregue o código fonte e o código executável. Informe
+qual foi a semente que utilizou. O programa deve emitir um relatório com as freqüências observadas
+e esperadas e o valor da estatística do chi-quadrado.
+
+Documentação requerida: matriculas e nomes dos alunos membros do grupo, nome do programa, função do programa e descrição das principais estruturas de dados utilizadas. Se o programa tiver módulos, apresente também um diagrama mostrando o relacionamento entre eles. Os nomes dos arquivos do
+programa devem iniciar com o número do grupo, traço, dois dígitos sequênciais indicando o número do
+programa (nesse caso deve ser 01), traço, mnemônico para indicar a função do programa. O estimador de chi- quadrado, com k-1 graus de liberdade e nível de significância alfa, é dado pela fórmula:
+
+chi-quadrado(k-1,alfa) = Somatório(k) [(fok – fek)2  / fek]
