@@ -1,14 +1,13 @@
 ; file: switchcase.asm
-; macro que simula o comando switch do C
+; macro que simula o comando do-while do C
 
 %include "asm_io.inc"
 
-; SWITCH
-; parametro: (1) valor a ser testado
-; empilha o contexto do switch
-; inicia numero do caso presente
-; pula para o primeiro caso
-%macro SWITCH 1
+; do-while
+; executa um corpo da macro e verifica se uma condição é verdadeira
+; caso seja executa o corpo de novo
+
+%macro DO 0
 	%push cntxswitch
 	%assign %$casenum 1
 		mov eax, %1
@@ -145,7 +144,7 @@ asm_main:
 		call print_string
 		BREAK
 	ENDSWITCH
-	
+
 	mov eax, msg_teste3
 	call print_string
 
@@ -167,7 +166,7 @@ asm_main:
 		call print_string
 		BREAK
 	ENDSWITCH
-	
+
 	mov eax, msg_teste4
 	call print_string
 
@@ -192,5 +191,5 @@ asm_main:
 
     popa
     mov	eax, 0
-    leave                     
+    leave
     ret
