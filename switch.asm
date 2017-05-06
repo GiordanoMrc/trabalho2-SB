@@ -1,5 +1,6 @@
 ; file: switchcase.asm
 ; macro que simula o comando switch do C
+; pra compilar no ubuntu nasm -f elf -d ELF_TYPE asm_io.asm
 
 %include "asm_io.inc"
 
@@ -145,7 +146,7 @@ asm_main:
 		call print_string
 		BREAK
 	ENDSWITCH
-	
+
 	mov eax, msg_teste3
 	call print_string
 
@@ -167,7 +168,7 @@ asm_main:
 		call print_string
 		BREAK
 	ENDSWITCH
-	
+
 	mov eax, msg_teste4
 	call print_string
 
@@ -192,5 +193,5 @@ asm_main:
 
     popa
     mov	eax, 0
-    leave                     
+    leave
     ret

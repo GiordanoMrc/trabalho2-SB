@@ -1,6 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
-
+#define NI /*4096*/ 3
 
 
 void lfsr();
