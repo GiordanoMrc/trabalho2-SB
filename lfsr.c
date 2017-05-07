@@ -1,7 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <math.h>
-#define NI /*4096*/ 3
 #define NN 4096
 
 //vetor de classes
