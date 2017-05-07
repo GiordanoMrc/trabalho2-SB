@@ -18,7 +18,7 @@
 %macro endfor 0
 	jnz %$startloop  ; verifica se deve continuar iteracoes
 	%$endloop:       ; se nao, termina a iteracao
-	%pop             ; remove da pilha 
+	%pop             ; remove da pilha
 %endmacro
 
 global forSB	 ; declaracao do nome da macro na interface C
@@ -32,7 +32,7 @@ section .data
 	mov ebx,[esp+8]   ; captura do argumento 2 (Numero de iterações desejada)
 	mov ecx,[esp+12]  ; captura do argumento 3 (Passo da iteração, Diferente de 0 = passo incremental, Igual a 0 = decremental)
 
-	cmp eax,ebx       
+	cmp eax,ebx
 
 	for nz            ; chama a macro 'for' declarada na linha 10
 		cmp ecx,0     ; compara argumento de passo com 0
