@@ -20,21 +20,35 @@ Nota:
 
 II) Questão (6,0)
 
-Pesquise sobre a geração de pseudos-aleatórios com registrador de deslocamento.Na literatura especializada essa abordagem é conhecida como Linear Feedback Shift Register (LFSR). Escolha um polinômio da literatura e o Implemente em um gerador baseado em registrador de deslocamento de 24 bits.
+Pesquise sobre a geração de pseudos-aleatórios com registrador de deslocamento.
+Na literatura especializada essa abordagem é conhecida como Linear Feedback
+Shift Register (LFSR). Escolha um polinômio da literatura e o Implemente em um
+gerador baseado em registrador de deslocamento de 24 bits.
 
 a) Nesse módulo, use programa Assembly NASM
 b) Também implemente esse módulo em C ISO
 
-Gere 16M pseudos-aleatórios (1..16777215). Divida-os em 4096 intervalos e calcule a freqüência dos números em cada um desses intervalos. O primeiro intervalo deve ser (0, 4096), o segundo de [4096, 8192), etc. Para cada intervalo calcule a freqüência observada (fo) e a esperada (fe), isto é aquela considerando que os números são realmente aleatório ou seja, que seguem a distribuição uniforme) A frequência esperada deve ser 4096.
+Gere 16M pseudos-aleatórios (1..16777215). Divida-os em 4096 intervalos e
+calcule a freqüência dos números em cada um desses intervalos. O primeiro
+intervalo deve ser (0, 4096), o segundo de [4096, 8192), etc. Para cada
+intervalo calcule a freqüência observada (fo) e a esperada (fe), isto é aquela
+considerando que os números são realmente aleatório ou seja, que seguem a
+distribuição uniforme) A frequência esperada deve ser 4096.
 
 A semente inicial não pode ser zero
 
-O trabalho é em grupo. Use o padrão C ISO. Entregue o código fonte e o código executável. Informe
-qual foi a semente que utilizou. O programa deve emitir um relatório com as freqüências observadas
+O trabalho é em grupo. Use o padrão C ISO. Entregue o código fonte e o código
+executável. Informe qual foi a semente que utilizou. O programa deve emitir um
+relatório com as freqüências observadas
 e esperadas e o valor da estatística do chi-quadrado.
 
-Documentação requerida: matriculas e nomes dos alunos membros do grupo, nome do programa, função do programa e descrição das principais estruturas de dados utilizadas. Se o programa tiver módulos, apresente também um diagrama mostrando o relacionamento entre eles. Os nomes dos arquivos do
-programa devem iniciar com o número do grupo, traço, dois dígitos sequênciais indicando o número do
-programa (nesse caso deve ser 01), traço, mnemônico para indicar a função do programa. O estimador de chi- quadrado, com k-1 graus de liberdade e nível de significância alfa, é dado pela fórmula:
+Documentação requerida: matriculas e nomes dos alunos membros do grupo, nome do
+programa, função do programa e descrição das principais estruturas de dados
+utilizadas. Se o programa tiver módulos, apresente também um diagrama mostrando
+o relacionamento entre eles. Os nomes dos arquivos do programa devem iniciar
+com o número do grupo, traço, dois dígitos sequênciais indicando o número do
+programa (nesse caso deve ser 01), traço, mnemônico para indicar a função do
+programa. O estimador de chi- quadrado, com k-1 graus de liberdade e nível de
+significância alfa, é dado pela fórmula:
 
 chi-quadrado(k-1,alfa) = Somatório(k) [(fok – fek)2  / fek]
