@@ -20,7 +20,7 @@ global forSB	 			; declaracao do nome da macro na interface C
 
 section .data
 
-; mensagens que sera mostrada a cada iteracao
+; mensagens que serao mostrada a cada iteracao (iteracao_msg) e ao fim (total_msg)
 iteracao_msg 		db "(Executando iteracao)", 0xa, 0
 total_msg 		db " iteracoes executadas no total", 0xa, 0
 
