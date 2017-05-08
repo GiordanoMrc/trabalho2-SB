@@ -1,5 +1,7 @@
 ; file: switchcase.asm
 ; macro que simula o comando do-while do C
+;  Jefferson Viana Fonseca Abreu
+;  13/0028959
 
 %include "asm_io.inc"
 

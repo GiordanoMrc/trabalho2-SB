@@ -1,3 +1,8 @@
+/*
+  Jefferson Viana Fonseca Abreu
+  13/0028959
+*/
+
 #include <stdint.h>
 #include <stdio.h>
 #include <math.h>
