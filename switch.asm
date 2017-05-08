@@ -94,8 +94,8 @@ segment .bss
 ;
 
 segment .text
-        global  asm_main
-asm_main:
+        global  switchSB
+switchSB:
 	enter	0,0               ; setup routine
 	pusha
 ;

@@ -70,8 +70,8 @@ total_msg 		db " iteracoes executadas no total", 0xa, 0
 	mov eax, total_msg  	; imprime na tela a cada iteracao
 	call print_string
 
-	 popa  					; pop routine
-     mov	eax, 0
-     leave
+	popa  					; pop routine
+    mov	eax, 0
+    leave
 
 	ret               		; retorna ao programa C

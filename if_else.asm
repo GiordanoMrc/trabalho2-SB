@@ -52,8 +52,8 @@ valor_false 	equ 0
 segment .bss
 
 segment .text
-	global asm_main
-asm_main:
+	global ifElseSB
+ifElseSB:
 	enter 0,0
 	pusha
 
