@@ -38,10 +38,13 @@ total_msg 		db " iteracoes executadas no total", 0xa, 0
 
 	forSB:
 
+	enter	0,0             ; setup routine
+ 	pusha
+
 	mov eax, iteracao_msg   ; mensagem de iteracao
-	mov edx,[esp+4]   		; captura do argumento 1
-	mov ebx,[esp+8]   		; captura do argumento 2 (Numero de iterações desejada)
-	mov ecx,[esp+12]  		; captura do argumento 3 (Passo da iteração, Diferente de 0 = passo incremental, Igual a 0 = decremental)
+	mov edx,[ebp+8]   		; captura do argumento 1
+	mov ebx,[ebp+12]   		; captura do argumento 2 (Numero de iterações desejada)
+	mov ecx,[ebp+16]  		; captura do argumento 3 (Passo da iteração, Diferente de 0 = passo incremental, Igual a 0 = decremental)
 	mov edi, 0
 	cmp edx,ebx       
 
@@ -66,4 +69,9 @@ total_msg 		db " iteracoes executadas no total", 0xa, 0
 	call print_int    		; imprime na tela o total de iteracoes
 	mov eax, total_msg  	; imprime na tela a cada iteracao
 	call print_string
+
+	 popa  					; pop routine
+     mov	eax, 0
+     leave
+
 	ret               		; retorna ao programa C
