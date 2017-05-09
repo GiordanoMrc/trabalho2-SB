@@ -4,8 +4,8 @@
 ;
 ; ÁLVARO TORRES VIEIRA
 ; 14/0079661
-;
-; ARQUIVO PARA TESTE: while_do.c
+; 
+; Comando para gerar objeto: nasm -f elf while_do
 ;
 
 %macro while_do 1
@@ -29,9 +29,9 @@ c:	resd	1
 
 segment .text
 
-	global _asm_main
+	global whileDoSB
 
-	_asm_main:
+	whileDoSB:
 	enter 0,0
 	pusha
 ;

@@ -1,6 +1,19 @@
 /*
+
+  Grupo 7
+
+  Implementação do gerador de números aleatórios com LFSR e
+  cálculo do chi-quadrado
+
   Jefferson Viana Fonseca Abreu
   13/0028959
+
+  Rafael Dias da Costa
+  12/0133253
+
+
+  Comando para compilacao: gcc lfsr.c -o lfsr -g -lm
+
 */
 
 #include <stdint.h>

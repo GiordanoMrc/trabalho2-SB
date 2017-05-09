@@ -1,6 +1,6 @@
 ; file: switchcase.asm
 ; macro que simula o comando switch do C
-; pra compilar no ubuntu nasm -f elf -d ELF_TYPE asm_io.asm
+; pra compilar no ubuntu nasm -f elf asm_io.asm
 
 %include "asm_io.inc"
 

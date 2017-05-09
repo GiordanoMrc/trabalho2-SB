@@ -1,7 +1,11 @@
-; file: switchcase.asm
+; Grupo 7
+;
+; Jefferson Viana Fonseca Abreu  13/0028959
+;
 ; macro que simula o comando do-while do C
-;  Jefferson Viana Fonseca Abreu
-;  13/0028959
+; 
+; Comando para gerar objeto: nasm -f elf do-while.asm   (Para Linux, desenvolvido em Ubuntu 16.04)
+;
 
 %include "asm_io.inc"
 
@@ -21,7 +25,9 @@
 %endmacro
 
 section .dat
-msg_teste1 db 'testetetstet',0
+msg_teste1 		db "Iniciando teste do-while...", 0xa, 0
+newline 		db "", 0xa, 0
+
 
 segment .bss
 ;
@@ -46,6 +52,8 @@ mov ecx, 10
 doWhile
 	mov eax, ecx
 	call print_int
+	mov eax, newline
+	call print_string
 	sub ecx, 1
 endDoWhile ecx
 

@@ -1,5 +1,15 @@
+; Grupo 7
+;
+; Implementação do gerador de números aleatórios com LFSR em NASM
+;
 ; Felipe da Costa Malaquias 13/0044440
-; File: aleatorios.asm
+;
+; Comando para gerar objeto: nasm -f elf aleatorios.asm
+; 
+; Comando para compilação: gcc aleatorios.o -o lfsr asm_io.o
+;
+; (necessário gerar objeto do asm_io.asm com nasm -f elf -d ELF_TYPE asm_io.asm)
+
 
 %include "asm_io.inc"
 %define NN 4096 ; numero de classes

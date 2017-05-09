@@ -1,4 +1,10 @@
+; Grupo 7
+;
 ; Felipe da Costa Malaquias 13/0044440
+;
+; macro IF/ELSE em NASM
+;
+; Comando para gerar objeto: nasm -f elf if_else.asm
 
 %include "asm_io.inc"
 
