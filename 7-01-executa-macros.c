@@ -1,3 +1,20 @@
+/* Grupo 7 
+
+  Rafael Dias da Costa 12/0133253
+
+  Programa em C para rodar todas as macros desenvolvidas em NASM
+
+  (Antes da compilação, todos os arquivos ASM devem ter gerado seus objetos no mesmo diretório. Verificar em cada arquivo)
+  Gerar objeto do asm_io: nasm -f elf -d ELF_TYPE asm_io.asm
+
+  Comando de compilação: gcc -m32 7-01-executa-macros.c 7-01-for.o 7-01-if_else.o 7-01-switch.o 7-01-while-do.o 7-01-do-while.o asm_io.o -o executavel
+
+  Ou simplesmente: gcc -m32 7-01-executa-macros.c *.o -o executavel
+
+  Caso todos arquivos-objetos estejam no mesmo diretório.
+  
+  */
+
 #include <stdio.h>
 
 int forSB(int a,int b,int c);

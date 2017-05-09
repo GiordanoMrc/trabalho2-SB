@@ -1,6 +1,9 @@
-; file: switchcase.asm
+; Grupo 7
+;
+; Matheus de Oliveira Vieira 13/0126420
+;
 ; macro que simula o comando switch do C
-; pra compilar no ubuntu nasm -f elf asm_io.asm
+; pra compilar no ubuntu nasm -f elf 7-01-asm_io.asm
 
 %include "asm_io.inc"
 

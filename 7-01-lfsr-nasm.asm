@@ -4,11 +4,11 @@
 ;
 ; Felipe da Costa Malaquias 13/0044440
 ;
-; Comando para gerar objeto: nasm -f elf aleatorios.asm
+; Comando para gerar objeto: nasm -f elf 7-01-lfsr-nasm.asm
 ; 
-; Comando para compilação: gcc aleatorios.o -o lfsr asm_io.o
+; Comando para compilação: gcc 7-01-lfsr-nasm.o -o lfsr asm_io.o
 ;
-; (necessário gerar objeto do asm_io.asm com nasm -f elf -d ELF_TYPE asm_io.asm)
+; (necessário gerar objeto do asm_io: nasm -f elf -d ELF_TYPE asm_io.asm)
 
 
 %include "asm_io.inc"

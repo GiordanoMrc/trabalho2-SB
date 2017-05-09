@@ -6,7 +6,7 @@
 ;
 ; Arquivo para teste em C: for.c
 ;
-; Comando para gerar objeto: nasm -f elf for.asm   (Para Linux, desenvolvido em Ubuntu 16.04)
+; Comando para gerar objeto: nasm -f elf 7-01-for.asm   (Para Linux, desenvolvido em Ubuntu 16.04)
 ;
 
 

@@ -12,7 +12,7 @@
   12/0133253
 
 
-  Comando para compilacao: gcc lfsr.c -o lfsr -g -lm
+  Comando para compilacao: gcc 7-01-lfsr.c -o lfsr -g -lm
 
 */
 

@@ -4,7 +4,7 @@
 ;
 ; macro IF/ELSE em NASM
 ;
-; Comando para gerar objeto: nasm -f elf if_else.asm
+; Comando para gerar objeto: nasm -f elf 7-01-if_else.asm
 
 %include "asm_io.inc"
 
