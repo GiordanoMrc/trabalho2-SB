@@ -6,7 +6,7 @@
 ;
 ; Comando para gerar objeto: nasm -f elf 7-01-lfsr-nasm.asm
 ; 
-; Comando para compilação: gcc 7-01-lfsr-nasm.o -o lfsr asm_io.o
+; Comando para compilação: gcc -m32 7-01-lfsr-nasm.o -o lfsr asm_io.o
 ;
 ; (necessário gerar objeto do asm_io: nasm -f elf -d ELF_TYPE asm_io.asm)
 
