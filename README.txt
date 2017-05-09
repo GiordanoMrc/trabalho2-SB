@@ -2,10 +2,11 @@
 
 Membros do grupo:
 
-Felipe da Costa Malaquias	13/0044440
-Matheus de Oliveira Vieira	13/0126420
-Rafael Dias da Costa	 	12/0133253
-Jefferson Viana Fonseca		13/0028959
+Alvaro Torres Vieira  		14/0079661  (macro while-do)
+Felipe da Costa Malaquias	13/0044440  (macro if/else e lfsr em NASM)
+Jefferson Viana Fonseca		13/0028959  (macro do-while e lfsr em C)
+Matheus de Oliveira Vieira	13/0126420  (macro switch)
+Rafael Dias da Costa	 	12/0133253  (macro for e lfsr em C)
 
 A participação de trabalho de cada membro foi registrada no comentário de cada arquivo.
 
