@@ -61,7 +61,7 @@ main:
 		add dword [class + eax*4], 1
 
 		inc edx
-		cmp edx, 40960
+		cmp edx, 4096
 	jne do
 
 	; imprime as frequencias
